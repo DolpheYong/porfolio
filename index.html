@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rodolphe SOLOFONIAINA – Formateur en informatique | Portfolio</title>
+  <meta name="description" content="Portfolio de Rodolphe SOLOFONIAINA, étudiant en Master 1 Informatique et formateur en informatique bureautique et développement web à Madagascar : compétences, expériences, projets et contact." />
+  <meta name="author" content="Rodolphe SOLOFONIAINA" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="canonical" href="https://dolpheyong.github.io/" />
+  <!-- Open Graph / Twitter : vérifiez l'URL et ajoutez l'image -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Rodolphe SOLOFONIAINA – Formateur en informatique" />
+  <meta property="og:description" content="Étudiant en Master 1 Informatique et formateur : découvrez mon profil, mes compétences, mes expériences et mes projets." />
+  <meta property="og:url" content="https://dolpheyong.github.io/" />
+  <meta property="og:image" content="https://dolpheyong.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon simple (SVG intégré) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3ERS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Thème appliqué avant l'affichage pour éviter le clignotement -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      var saved = null;
+      try { saved = localStorage.getItem('theme'); } catch (e) {}
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#accueil" aria-label="Rodolphe Solofoniaina – Accueil">
+        <span class="brand-mark">RS</span><span class="brand-name">Rodolphe S.</span>
+      </a>
+
+      <nav id="primaryNav" class="nav-links" aria-label="Navigation principale">
+        <ul>
+          <li><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li><a class="nav-link" href="#apropos">À propos</a></li>
+          <li><a class="nav-link" href="#competences">Compétences</a></li>
+          <li><a class="nav-link" href="#experiences">Expériences</a></li>
+          <li><a class="nav-link" href="#projets">Projets</a></li>
+          <li><a class="nav-link" href="#formations">Formations</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="assets/CV-Rodolphe-Solofoniaina.pdf" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i><span class="btn-label">CV</span>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Activer le mode sombre">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="kicker">Bonjour, je suis</p>
+          <h1 id="hero-title">Rodolphe <span class="gradient-text">SOLOFONIAINA</span></h1>
+          <p class="hero-role">Étudiant en Master 1 Informatique · Formateur en informatique bureautique</p>
+          <p class="hero-lead">Je prépare et j'anime des formations, j'accompagne les apprenants pas à pas et je développe mes compétences en programmation, de Java et C++ au développement web.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projets"><i class="fa-solid fa-code" aria-hidden="true"></i> Voir mes projets</a>
+            <a class="btn btn-outline" href="#contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Me contacter</a>
+          </div>
+          <ul class="socials" aria-label="Réseaux sociaux">
+            <li><a href="https://github.com/DolpheYong" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rodolphe-solofoniaina-9a580521a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:rodolphesolofoniaina09@gmail.com" aria-label="Envoyer un email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal" aria-label="Aperçu du profil">
+          <div class="code-card" aria-hidden="true">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+            <pre><code><span class="c-k">const</span> profil = {
+  nom: <span class="c-s">"Rodolphe Solofoniaina"</span>,
+  role: <span class="c-s">"Formateur en informatique"</span>,
+  etudes: <span class="c-s">"Master 1 Informatique"</span>,
+  langages: [<span class="c-s">"Java"</span>, <span class="c-s">"C++"</span>, <span class="c-s">"Web"</span>],
+  pays: <span class="c-s">"Madagascar"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section" aria-labelledby="apropos-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">À propos</p>
+          <h2 id="apropos-title">Qui suis-je ?</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <img id="profilePhoto" src="assets/Dolphe.png" alt="Portrait de Rodolphe Solofoniaina" width="320" height="320" loading="lazy" />
+              <span class="photo-fallback" id="photoFallback" aria-hidden="true">RS</span>
+            </div>
+            <p class="placeholder-note"></p>
+          </div>
+          <div class="about-text reveal">
+            <p>Étudiant en <strong>Master 1 Informatique</strong> à l'Université de Toamasina et titulaire d'une <strong>Licence en Mathématiques et Informatique</strong>, je suis <strong>formateur en informatique bureautique et développement web</strong> au Centre de formation Génie LOGIC.</p>
+            <p>J'ai de l'expérience dans la préparation et l'animation de formations, ainsi que dans l'accompagnement pédagogique des apprenants, y compris des personnes en situation de handicap. Je suis aussi <strong>ambassadeur Digital Safety</strong> pour l'Internet Society Madagascar (projet BCRiM II).</p>
+            <h3>Objectifs professionnels</h3>
+            <p>Mettre mes compétences au service du développement des compétences numériques des apprenants, tout en renforçant mon expertise en développement logiciel, en cybersécurité et en développement mobile.</p>
+            <h3>Qualités</h3>
+            <ul class="chips">
+              <li>Esprit d'analyse et de résolution de problèmes</li>
+              <li>Autonomie et sens des responsabilités</li>
+              <li>Travail en équipe</li>
+              <li>Capacité d'adaptation</li>
+              <li>Curiosité et apprentissage rapide</li>
+              <li>Rigoureux, pédagogue, à l'écoute</li>
+            </ul>
+            <h3>Centres d'intérêt</h3>
+            <ul class="chips">
+              <li>Développement logiciel</li>
+              <li>Cybersécurité</li>
+              <li>Développement mobile</li>
+              <li>Veille technologique</li>
+              <li>Innovation et inclusion numérique</li>
+              <li>Lecture et bénévolat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section section-alt" aria-labelledby="competences-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Compétences</p>
+          <h2 id="competences-title">Ce que je maîtrise</h2>
+          <p class="section-sub">Les niveaux indiqués sont ceux de mon CV.</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Langages</h3>
+            <ul class="chips">
+              <li>Java <small>POO</small></li>
+              <li>C++ <small>POO</small></li>
+              <li>HTML / CSS <small>notions</small></li>
+              <li>JavaScript <small>notions</small></li>
+            </ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Bases de données</h3>
+            <ul class="chips"><li>MySQL</li><li>SQLite</li><li>Postgree</li></ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Outils et environnements</h3>
+            <ul class="chips">
+              <li>Qt Creator</li><li>NetBeans</li><li>Visual Studio Code</li>
+              <li>Android Studio</li><li>Git / GitHub</li><li>Trello</li>
+            </ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-brands fa-linux" aria-hidden="true"></i> Systèmes</h3>
+            <ul class="chips"><li>Windows</li><li>Linux</li></ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-file-word" aria-hidden="true"></i> Bureautique</h3>
+            <ul class="chips"><li>Microsoft Word</li><li>Microsoft Excel</li><li>Microsoft PowerPoint</li></ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-language" aria-hidden="true"></i> Langues</h3>
+            <ul class="chips">
+              <li>Malagasy <small>langue maternelle</small></li>
+              <li>Français <small>DELF B1</small></li>
+              <li>Anglais <small>intermédiaire</small></li>
+            </ul>
+          </article>
+          <article class="card skill reveal">
+            <h3><i class="fa-solid fa-people-group" aria-hidden="true"></i> Compétences méthodologiques</h3>
+            <ul class="chips">
+              <li>Préparation et animation de formations</li>
+              <li>Accompagnement pédagogique</li>
+              <li>Suivi d'exercices pratiques</li>
+              <li>Sensibilisation à la sécurité numérique</li>
+              <li>Résolution de problèmes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCES -->
+    <section id="experiences" class="section" aria-labelledby="experiences-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Expériences</p>
+          <h2 id="experiences-title">Parcours professionnel</h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card">
+              <p class="meta"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2026 – Présent</p>
+              <h3>Formateur en informatique bureautique et développement web</h3>
+              <p class="meta"><i class="fa-solid fa-building" aria-hidden="true"></i> Centre de formation Génie LOGIC</p>
+              <h4>Responsabilités</h4>
+              <ul class="list">
+                <li>Formation des apprenants à Word, Excel et PowerPoint.</li>
+                <li>Initiation au développement web : HTML, CSS et JavaScript.</li>
+                <li>Préparation et animation des séances de formation.</li>
+                <li>Accompagnement pédagogique et suivi des exercices pratiques.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card">
+              <p class="meta"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2026 - Présent</p>
+              <h3>Ambassadeur Digital Safety</h3>
+              <p class="meta"><i class="fa-solid fa-building" aria-hidden="true"></i> Internet Society Madagascar – Projet BCRiM II</p>
+              <h4>Responsabilités</h4>
+              <ul class="list">
+                <li>Sensibilisation aux bonnes pratiques de sécurité numérique.</li>
+                <li>Promotion d'un usage responsable des outils numériques.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card">
+              <p class="meta"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2023 – 2025</p>
+              <h3>Responsable numérique</h3>
+              <p class="meta"><i class="fa-solid fa-building" aria-hidden="true"></i> Club des Étudiants Francophones (Cléf) VAKOAGNA</p>
+              <h4>Responsabilités</h4>
+              <ul class="list">
+                <li>Accompagnement des membres dans l'utilisation des outils numériques.</li>
+                <li>Gestion des outils numériques et participation aux activités de communication du club.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card">
+              <p class="meta"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2023 – 2024</p>
+              <h3>Intervenant social et formateur en informatique bureautique</h3>
+              <p class="meta"><i class="fa-solid fa-building" aria-hidden="true"></i> Projet MASOVA · <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Soanierana Ivongo</p>
+              <h4>Responsabilités</h4>
+              <ul class="list">
+                <li>Accompagnement des bénéficiaires, notamment des personnes en situation de handicap.</li>
+                <li>Animation d'activités de sensibilisation et d'accompagnement.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section section-alt" aria-labelledby="projets-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Projets</p>
+          <h2 id="projets-title">Mes réalisations</h2>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrer les projets par technologie">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">HTML / CSS / JavaScript</button>
+          <button class="filter-btn" type="button" data-filter="php" aria-pressed="false">PHP / MySQL</button>
+        </div>
+
+        <div class="grid grid-3" id="projectGrid">
+          <article class="card project reveal" data-tech="web php">
+            <div class="thumb thumb-a" aria-hidden="true"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class="card-body">
+              <h3>Plateforme de leçons web</h3>
+              <p>Site pour partager des leçons de développement web avec mes camarades, passé d'un site statique à un site dynamique avec base de données.</p>
+              <ul class="list">
+                <li>Consultation publique des leçons sous forme de cartes</li>
+                <li>Page de détail pour chaque leçon</li>
+                <li>Espace admin protégé par mot de passe (en cours)</li>
+              </ul>
+              <ul class="chips"><li>PHP</li><li>MySQL</li><li>Tailwind CSS</li></ul>
+              <div class="links">
+                <a href="https://VOTRE-LIEN-DEMO.example" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo (à remplacer)</a>
+                <a href="https://github.com/DolpheYong" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code (lien du dépôt à préciser)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-tech="web">
+            <div class="thumb thumb-b" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+            <div class="card-body">
+              <h3>Cours HTML, CSS et JavaScript</h3>
+              <p>Leçons de développement web rédigées en pages statiques et publiées sur GitHub Pages pour mes camarades.</p>
+              <ul class="list">
+                <li>Contenu pédagogique structuré par leçon</li>
+                <li>Publication gratuite via GitHub Pages</li>
+              </ul>
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+              <div class="links">
+                <a href="https://dolpheyong.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo (à vérifier)</a>
+                <a href="https://github.com/DolpheYong" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code (lien du dépôt à préciser)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-msg" id="emptyMsg" hidden>Aucun projet ne correspond à ce filtre.</p>
+      </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="formations" class="section" aria-labelledby="formations-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Formations et certifications</p>
+          <h2 id="formations-title">Parcours académique</h2>
+        </header>
+
+        <h3 class="subhead reveal">Diplômes</h3>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <i class="fa-solid fa-graduation-cap card-icon" aria-hidden="true"></i>
+            <h3>Master 1 Informatique</h3>
+            <p class="meta">Université de Toamasina</p>
+            <p class="meta">En cours</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-user-graduate card-icon" aria-hidden="true"></i>
+            <h3>Licence en Mathématiques et Informatique</h3>
+            <p class="meta">Université de Toamasina</p>
+            <p class="meta">Obtenue en 2025</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-school card-icon" aria-hidden="true"></i>
+            <h3>Baccalauréat série D</h3>
+            <p class="meta">Établissement et année : à compléter</p>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal">Certifications et attestations</h3>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <i class="fa-solid fa-certificate card-icon" aria-hidden="true"></i>
+            <h3>Digital Safety Ambassador</h3>
+            <p class="meta">Internet Society Madagascar</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-certificate card-icon" aria-hidden="true"></i>
+            <h3>Jeunes Acteurs de l'Innovation et de la Durabilité</h3>
+            <p class="meta">COI–OIF · Cybersécurité et Intelligence Artificielle · 2025</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-brands fa-linux card-icon" aria-hidden="true"></i>
+            <h3>Linux Essentials</h3>
+            <p class="meta">Linux Professional Institute (LPI)</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-certificate card-icon" aria-hidden="true"></i>
+            <h3>Certificat PIX</h3>
+            <p class="meta">Compétences numériques</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-language card-icon" aria-hidden="true"></i>
+            <h3>DELF B1</h3>
+            <p class="meta">Langue française</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-award card-icon" aria-hidden="true"></i>
+            <h3>Programme TAFA</h3>
+            <p class="meta">Attestation de participation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Travaillons ensemble</h2>
+          <p class="section-sub">Une opportunité, une question ? Écrivez-moi.</p>
+        </header>
+        <div class="contact-grid">
+          <ul class="contact-list reveal">
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><span>Email</span><a href="mailto:rodolphesolofoniaina09@gmail.com">rodolphesolofoniaina09@gmail.com</a></div></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><div><span>Téléphone</span><a href="tel:+261345206073">+261 34 52 060 73</a></div></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><span>Localisation</span><p>Sahavola, Fénérive-Est, Madagascar</p></div></li>
+            <li><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/rodolphe-solofoniaina-9a580521a" target="_blank" rel="noopener noreferrer">rodolphe-solofoniaina</a></div></li>
+            <li><i class="fa-brands fa-github" aria-hidden="true"></i><div><span>GitHub</span><a href="https://github.com/DolpheYong" target="_blank" rel="noopener noreferrer">github.com/DolpheYong</a></div></li>
+          </ul>
+
+          <!-- Renseignez data-endpoint avec votre URL Formspree pour activer l'envoi -->
+          <form id="contactForm" class="card form reveal" novalidate data-endpoint="">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error" />
+              <p class="error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" />
+              <p class="error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="subject">Sujet</label>
+              <input id="subject" name="subject" type="text" required aria-describedby="subject-error" />
+              <p class="error" id="subject-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+              <p class="error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Envoyer</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Rodolphe SOLOFONIAINA. Tous droits réservés.</p>
+      <ul class="socials" aria-label="Réseaux sociaux">
+        <li><a href="https://github.com/DolpheYong" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rodolphe-solofoniaina-9a580521a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:rodolphesolofoniaina09@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+      </ul>
+      <button class="btn btn-outline btn-sm" type="button" data-top><i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Haut de page</button>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Retour en haut" data-top hidden>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
